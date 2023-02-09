@@ -26,7 +26,9 @@ body{
     
 }
 
-.form {
+/*FORMS*/
+
+.main__form {
 	box-sizing: border-box;
 	margin-right: 65px;
     min-height: 594px;
@@ -37,7 +39,6 @@ body{
 	flex-direction: column;
 	align-items: stretch;
     justify-content: space-around;
-    /*margin-right: 150px;*/
     
 }
 
@@ -65,6 +66,7 @@ input{
 
 .input-field {
     padding-bottom: 9px;
+    padding-left: 6px;
 
 }
 
@@ -82,7 +84,7 @@ input{
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.3em;
-    
+    opacity: 0.9;
 }
 
 input[type=text],
@@ -91,5 +93,39 @@ input[type=email] {
     border-bottom: 1px solid #9DBEBB;
     background-color: transparent;
    
-  }
-  
+}
+
+#message_title, 
+#email {
+    width: 50%;
+}
+
+/*BUTTON*/
+.main__btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 56px;
+}
+
+.main__btn-btn{
+    width: 202px;
+    height: 48px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #468189;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+}
+
+.main__btn-btn:hover{
+    background: #FFB039;
+}
